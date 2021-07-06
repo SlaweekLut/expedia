@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet type="text/css" href="assets/css/style.css">
     <title>Expedia</title>
 </head>
@@ -55,7 +56,16 @@
                     </div>
                     <a href="#" class="nav__link">Supports</a>
                     <a href="#" class="nav__link">Tips</a>
-                    <a href="#" class="nav__link nav__btn btn">Sign In</a>
+                    <a href="#" class="nav__link nav__btn btn">
+                        <span>Sign in</span> 
+                    </a>
+                </nav>
+                <nav class="nav-mobile">
+                    <button class="burger">
+                        <div class="burger-element"></div>
+                        <div class="burger-element"></div>
+                        <div class="burger-element"></div>
+                    </button>
                 </nav>
             </div>
         </div>
@@ -177,22 +187,24 @@
                     </div>
                 </div>
                 <div class="stays-footer">
-                    <p class="stays-footer__warning">
+                    <div class="stays-footer__warning">
                         <svg width="24" height="24" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.2898 3.85999L1.81978 18C1.64514 18.3024 1.55274 18.6453 1.55177 18.9945C1.55079 19.3437 1.64127 19.6871 1.8142 19.9905C1.98714 20.2939 2.2365 20.5467 2.53748 20.7238C2.83847 20.9009 3.18058 20.9962 3.52978 21H20.4698C20.819 20.9962 21.1611 20.9009 21.4621 20.7238C21.7631 20.5467 22.0124 20.2939 22.1854 19.9905C22.3583 19.6871 22.4488 19.3437 22.4478 18.9945C22.4468 18.6453 22.3544 18.3024 22.1798 18L13.7098 3.85999C13.5315 3.5661 13.2805 3.32311 12.981 3.15447C12.6814 2.98584 12.3435 2.89725 11.9998 2.89725C11.656 2.89725 11.3181 2.98584 11.0186 3.15447C10.7191 3.32311 10.468 3.5661 10.2898 3.85999V3.85999Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12 9V13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12 17H12.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Check the updates about travel health policy during the pandemic COVID-19 in <span class="bold"> Traveling Policy Updates</span>
-                    </p>
+                        <p class="stays-footer__text">
+                            Check the updates about travel health policy during the pandemic COVID-19 in<span class="bold">Traveling Policy Updates</span>
+                        </p>
+                    </div>
                     <button class="stays-footer__btn btn">
                         <svg width="24" height="24" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M21.0004 21L16.6504 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Search stays
+                        <span>Search stays</span>
                     </button>
                 </div>
             </div>
@@ -202,26 +214,28 @@
     <section class="feature block">
         <div class="container">
             <h1 class="block__title feature__title">Here to help keep you on the move</h1>
-            <div class="feature__content">
-                <div class="feature-item">
-                    <div class="feature-item__round feature-item__round_blue"></div>
-                    <div class="col">
-                        <h3 class="feature-item__title">Change or cancel trip</h3>
-                        <p class="feature-item__text">Make updates to your itinerary or cancel a booking</p>
+            <div class="feature__container" data-mobile="false">
+                <div class="feature__content">
+                    <div class="feature-item">
+                        <div class="feature-item__round feature-item__round_blue"></div>
+                        <div class="col">
+                            <h3 class="feature-item__title">Change or cancel trip</h3>
+                            <p class="feature-item__text">Make updates to your itinerary or cancel a booking</p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item__round feature-item__round_green"></div>
-                    <div class="col">
-                        <h3 class="feature-item__title">Change or cancel trip</h3>
-                        <p class="feature-item__text">Make updates to your itinerary or cancel a booking</p>
+                    <div class="feature-item">
+                        <div class="feature-item__round feature-item__round_green"></div>
+                        <div class="col">
+                            <h3 class="feature-item__title">Change or cancel trip</h3>
+                            <p class="feature-item__text">Make updates to your itinerary or cancel a booking</p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item__round feature-item__round_red"></div>
-                    <div class="col">
-                        <h3 class="feature-item__title">Change or cancel trip</h3>
-                        <p class="feature-item__text">Make updates to your itinerary or cancel a booking</p>
+                    <div class="feature-item">
+                        <div class="feature-item__round feature-item__round_red"></div>
+                        <div class="col">
+                            <h3 class="feature-item__title">Change or cancel trip</h3>
+                            <p class="feature-item__text">Make updates to your itinerary or cancel a booking</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,21 +271,23 @@
     <section class="benefits block">
         <div class="container">
             <h1 class="benefits__title block__title">Trips made easier for everyone, everywhere</h1>
-            <div class="benefits__content">
-                <div class="benefits-item">
-                    <img class="benefits-item__img" src="assets/img/benefits-img-1.svg">
-                    <h3 class="benefits-item__title">Book and relax</h3>
-                    <p class="benefits-item__text">Flexible options let you spend more time making plans and less time worrying when things change.</p>
-                </div>
-                <div class="benefits-item">
-                    <img class="benefits-item__img" src="assets/img/benefits-img-2.svg">
-                    <h3 class="benefits-item__title">Travel smart checklist</h3>
-                    <p class="benefits-item__text">Ready for your next great vacation? use this cheatsheet to ensure you’ve covered the esentials.</p>
-                </div>
-                <div class="benefits-item">
-                    <img class="benefits-item__img" src="assets/img/benefits-img-3.svg">
-                    <h3 class="benefits-item__title">Point hack your trip</h3>
-                    <p class="benefits-item__text">Earn Expedia Rewards points on top of any credit card or airline program points when you book.</p>
+            <div class="benefits-container" data-mobile="false">
+                <div class="benefits__content">
+                    <div class="benefits-item">
+                        <img class="benefits-item__img" src="assets/img/benefits-img-1.svg">
+                        <h3 class="benefits-item__title">Book and relax</h3>
+                        <p class="benefits-item__text">Flexible options let you spend more time making plans and less time worrying when things change.</p>
+                    </div>
+                    <div class="benefits-item">
+                        <img class="benefits-item__img" src="assets/img/benefits-img-2.svg">
+                        <h3 class="benefits-item__title">Travel smart checklist</h3>
+                        <p class="benefits-item__text">Ready for your next great vacation? use this cheatsheet to ensure you’ve covered the esentials.</p>
+                    </div>
+                    <div class="benefits-item">
+                        <img class="benefits-item__img" src="assets/img/benefits-img-3.svg">
+                        <h3 class="benefits-item__title">Point hack your trip</h3>
+                        <p class="benefits-item__text">Earn Expedia Rewards points on top of any credit card or airline program points when you book.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -436,4 +452,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </html>
