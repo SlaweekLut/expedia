@@ -72,6 +72,10 @@ function navMenuOpen() {
     burger.classList.toggle('open');
     navMenu.classList.toggle('open');
 }
+function navMenuCLose() {
+    burger.classList.remove('open');
+    navMenu.classList.remove('open');
+}
 burger.addEventListener('click', navMenuOpen)
-navMenu.addEventListener('touchstart', navMenuOpen)
-navMenu.addEventListener('wheel', navMenuOpen)
+navMenu.addEventListener('touchstart', navMenuClose)
+navMenu.addEventListener('wheel', navMenuClose)
