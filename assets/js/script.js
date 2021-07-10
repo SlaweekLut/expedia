@@ -77,5 +77,6 @@ function navMenuClose() {
     navMenu.classList.remove('open');
 }
 burger.addEventListener('click', navMenuOpen)
-navMenu.addEventListener('touchstart', navMenuClose)
 navMenu.addEventListener('wheel', navMenuClose)
+navMenu.addEventListener('touchmove', navMenuClose)
+navMenu.addEventListener('click', navMenuClose)
