@@ -72,7 +72,7 @@ function navMenuOpen() {
     burger.classList.toggle('open');
     navMenu.classList.toggle('open');
 }
-function navMenuCLose() {
+function navMenuClose() {
     burger.classList.remove('open');
     navMenu.classList.remove('open');
 }
