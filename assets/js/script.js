@@ -74,3 +74,4 @@ function navMenuOpen() {
 }
 burger.addEventListener('click', navMenuOpen)
 navMenu.addEventListener('touchstart', navMenuOpen)
+navMenu.addEventListener('wheel', navMenuOpen)
